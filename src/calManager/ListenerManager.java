@@ -48,7 +48,8 @@ public class ListenerManager {
 			action.process();
 		}
 		else if(e.getSource() == window.getBtn().getSqr()){
-			
+			SqrAction action = new SqrAction(window);
+			action.process();
 		}
 		else{
 			NumAction action = new NumAction(window);
